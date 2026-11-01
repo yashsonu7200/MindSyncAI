@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Predict - MindSync AI</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav>
+
+        <h2>MindSync AI</h2>
+
+        <div>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/predict">Predict</a>
+            <a href="#">Dashboard</a>
+            <a href="/contact">Contact</a>
+        </div>
+
+    </nav>
+
+
+    <!-- Prediction Section -->
+
+    <section class="predict">
+
+        <h1>Student Performance Prediction</h1>
+
+        <p>
+            Enter student information to predict the final academic grade using Machine Learning.
+        </p>
+
+
+        <form method="POST" action="/predict">
+
+            <label>Study Time</label>
+            <input
+                type="number"
+                name="studytime"
+                min="1"
+                max="4"
+                placeholder="Enter value (1 - 4)"
+                required
+            >
+
+
+            <label>Previous Failures</label>
+            <input
+                type="number"
+                name="failures"
+                min="0"
+                max="4"
+                placeholder="Enter previous failures"
+                required
+            >
+
+
+            <label>Free Time</label>
+            <input
+                type="number"
+                name="freetime"
+                min="1"
+                max="5"
+                placeholder="Enter value (1 - 5)"
+                required
+            >
+
+
+            <label>Going Out</label>
+            <input
+                type="number"
+                name="goout"
+                min="1"
+                max="5"
+                placeholder="Enter value (1 - 5)"
+                required
+            >
+
+
+            <label>Health</label>
+            <input
+                type="number"
+                name="health"
+                min="1"
+                max="5"
+                placeholder="Enter value (1 - 5)"
+                required
+            >
+
+
+            <label>Absences</label>
+            <input
+                type="number"
+                name="absences"
+                min="0"
+                placeholder="Enter number of absences"
+                required
+            >
+
+
+            <label>First Period Grade (G1)</label>
+            <input
+                type="number"
+                name="G1"
+                min="0"
+                max="20"
+                placeholder="Enter grade (0 - 20)"
+                required
+            >
+
+
+            <label>Second Period Grade (G2)</label>
+            <input
+                type="number"
+                name="G2"
+                min="0"
+                max="20"
+                placeholder="Enter grade (0 - 20)"
+                required
+            >
+
+
+            <button type="submit">
+                Predict Final Grade
+            </button>
+
+        </form>
+
+
+        <!-- Prediction Result -->
+
+        {% if result %}
+
+        <div class="result">
+
+            <h2>Prediction Result</h2>
+
+            <p>{{ result }}</p>
+
+            <h3>Performance Level</h3>
+
+            <p>{{ performance }}</p>
+
+        </div>
+
+        {% endif %}
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>© 2026 MindSync AI. All Rights Reserved.</p>
+
+        <p>Student Performance Prediction System</p>
+
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About - MindSync AI</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+
+        <h2>MindSync AI</h2>
+
+        <div>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/predict">Predict</a>
+            <a href="#">Dashboard</a>
+            <a href="/contact">Contact</a>
+        </div>
+
+    </nav>
+
+
+    <!-- About Hero -->
+
+    <section class="about-hero">
+
+        <h1>About MindSync AI</h1>
+
+        <p>
+            A Machine Learning based student performance
+            prediction system designed to provide meaningful
+            academic insights.
+        </p>
+
+    </section>
+
+
+    <!-- Creator + Project -->
+
+    <section class="creator-section">
+
+        <!-- Creator Card -->
+
+        <div class="creator-card">
+
+            <div class="profile-image">
+
+                <img src="{{ url_for('static', filename='image/profile.jpg') }}"
+                     alt="Yash Kumar Srivastava">
+
+            </div>
+
+            <h2>Yash Kumar Srivastava</h2>
+
+            <h3>B.Tech CSE (Artificial Intelligence)</h3>
+
+            <p>
+                Student Developer
+            </p>
+
+            <div class="creator-line"></div>
+
+            <p class="creator-description">
+                I am interested in Artificial Intelligence,
+                Machine Learning and building practical
+                technology projects.
+            </p>
+
+        </div>
+
+
+        <!-- Project Information -->
+
+        <div class="project-card">
+
+            <span class="small-title">MY PROJECT</span>
+
+            <h2>MindSync AI</h2>
+
+            <p>
+                MindSync AI is a student performance prediction
+                system that uses Machine Learning to estimate
+                a student's final academic grade.
+            </p>
+
+
+            <div class="project-details">
+
+                <div>
+                    <h4>Machine Learning</h4>
+                    <p>Random Forest Regression</p>
+                </div>
+
+                <div>
+                    <h4>Backend</h4>
+                    <p>Python & Flask</p>
+                </div>
+
+                <div>
+                    <h4>Data Processing</h4>
+                    <p>Pandas & NumPy</p>
+                </div>
+
+                <div>
+                    <h4>Frontend</h4>
+                    <p>HTML & CSS</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Objective -->
+
+    <section class="objective">
+
+        <h2>Project Objective</h2>
+
+        <p>
+            The main objective of MindSync AI is to use student
+            academic and lifestyle information to estimate
+            final academic performance and provide an easy-to-use
+            prediction interface.
+        </p>
+
+    </section>
+
+
+    <!-- Features -->
+
+    <section class="about-features">
+
+        <h2>Key Features</h2>
+
+        <div class="about-feature-grid">
+
+            <div>
+                <h3>Grade Prediction</h3>
+                <p>
+                    Predict the student's final grade using
+                    a trained Machine Learning model.
+                </p>
+            </div>
+
+            <div>
+                <h3>Student Analysis</h3>
+                <p>
+                    Uses academic and lifestyle factors
+                    provided by the student.
+                </p>
+            </div>
+
+            <div>
+                <h3>Performance Level</h3>
+                <p>
+                    Shows the predicted performance level
+                    along with the final grade.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>© 2026 MindSync AI. All Rights Reserved.</p>
+
+        <p>Student Performance Prediction System</p>
+
+    </footer>
+
+</body>
+
+</html>

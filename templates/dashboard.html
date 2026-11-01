@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard - MindSync AI</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav>
+
+        <h2>MindSync AI</h2>
+
+        <div>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/predict">Predict</a>
+            <a href="/dashboard">Dashboard</a>
+            <a href="/contact">Contact</a>
+        </div>
+
+    </nav>
+
+
+    <!-- Dashboard Header -->
+
+    <section class="dashboard-header">
+
+        <h1>MindSync AI Dashboard</h1>
+
+        <p>
+            Overview of the student performance prediction system.
+        </p>
+
+    </section>
+
+
+    <!-- Dashboard Cards -->
+
+    <section class="dashboard">
+
+        <div class="dashboard-card">
+
+            <h3>Machine Learning Model</h3>
+
+            <h2>Random Forest</h2>
+
+            <p>
+                Regression model used for predicting the final
+                student grade.
+            </p>
+
+        </div>
+
+
+        <div class="dashboard-card">
+
+            <h3>Model Accuracy Metric</h3>
+
+            <h2>MAE</h2>
+
+            <p>
+                Mean Absolute Error
+            </p>
+
+            <strong>1.1361</strong>
+
+        </div>
+
+
+        <div class="dashboard-card">
+
+            <h3>Prediction Target</h3>
+
+            <h2>G3</h2>
+
+            <p>
+                Final student grade predicted on a scale of
+                0 to 20.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Input Factors -->
+
+    <section class="factors">
+
+        <h2>Prediction Factors</h2>
+
+        <p>
+            The model uses the following student information
+            to generate the prediction.
+        </p>
+
+        <div class="factor-grid">
+
+            <div>Study Time</div>
+
+            <div>Previous Failures</div>
+
+            <div>Free Time</div>
+
+            <div>Going Out</div>
+
+            <div>Health</div>
+
+            <div>Absences</div>
+
+            <div>First Period Grade (G1)</div>
+
+            <div>Second Period Grade (G2)</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Call To Action -->
+
+    <section class="dashboard-action">
+
+        <h2>Ready to Predict?</h2>
+
+        <p>
+            Enter student information and generate a final
+            grade prediction.
+        </p>
+
+        <a href="/predict">
+
+            <button>Start Prediction</button>
+
+        </a>
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>© 2026 MindSync AI. All Rights Reserved.</p>
+
+        <p>Student Performance Prediction System</p>
+
+    </footer>
+
+</body>
+
+</html>
